@@ -16,15 +16,34 @@ body {
     display: none;
 } */
 
+section {
+    padding-bottom: 20px;
+}
+
+section > div {
+    padding: 10px 30px;
+}
+
 h1 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 62px;
+    font-weight: heavy;
+    margin: 0;
 }
 
 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    font-weight: lighter;
+}
+
+h4 {
     color: #e10600;
-    margin: 0px 0px 5px;
+    margin: 0;
     font-size: 11px;
 }
 
@@ -114,7 +133,7 @@ a {
 
 .footer {
     color: #d0d0d2;
-    padding: 2px 20px;
+    padding: 2px 20px 20px;
     justify-content: space-between;
 }
 
@@ -128,8 +147,12 @@ a {
 
 /* ---------- Latest ---------- */
 
-.latest > div{
-    padding-bottom: 20px;
+.latest h2 {
+    margin: 20px 0;
+}
+
+.latest h4 {
+    margin: 0px 0px 5px;
 }
 
 .news-content-text p,
@@ -139,10 +162,6 @@ a {
 }
 
 /* News */
-
-.news {
-    padding: 10px 30px;
-}
 
 .news img {
     width: 310px;
@@ -224,6 +243,8 @@ img.ad {
     font-size: 25px;
 }
 
+/* ---------- Schedule ---------- */
 
-
-
+title {
+    color:#15151E;
+}
