@@ -65,11 +65,6 @@ a {
     text-decoration: none;
 }
 
-.content {
-    width: 1360px;
-    margin: 0 auto;
-}
-
 .bkg-red {
     background-color: #e10600;
 }
@@ -254,12 +249,23 @@ img.ad {
 
 /* ---------- Schedule ---------- */
 
-.past-races > div:nth-child(1) {
-    border-top: 10px solid #15151E;
-    border-right: 10px solid #15151E;
+.schedule h4 {
+    margin: 0 0 5px;
+    font-size: 15px;
+}
+
+.past-races > div:nth-child(1),
+.next-race > div {
     border-top-right-radius: 25px;
     margin-top: 20px;
     padding: 20px 20px 0 0;
+}
+
+/* Past Races */
+
+.past-races > div:nth-child(1) {
+    border-top: 10px solid #15151E;
+    border-right: 10px solid #15151E;
     justify-content: space-between;
 }
 
@@ -267,13 +273,24 @@ img.ad {
     border: 1px solid #ededed;
     border-radius: 5px;
     padding: 20px;
+    width: fit-content;
 }
 
-.past-races > div:nth-child(2) {
+.past-races .races {
     gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.past-races > div:nth-child(2) > div {
+.past-races .races > div > h2:nth-child(3) {
+    background-color: #15151E;
+    width: fit-content;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+.past-races .races > div {
     border-top: 2px solid #15151E;
     border-right: 2px solid #15151E;
     border-top-right-radius: 10px;
@@ -286,7 +303,37 @@ img.ad {
     height: 1px;
 }
 
-.past-races h4 {
-    margin: 0 0 5px;
-    font-size: 15px;
+/* Next Race */
+
+.next-race > div {
+    border-top: 10px solid #e10600;
+    border-right: 10px solid #e10600;
+}
+
+/* --------- Responsive --------- */
+
+@media only screen and (min-width: 1360px) {
+    .content {
+        width: 1360px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .past-races .races {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+    .past-races .races {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .past-races > div:nth-child(1) {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
