@@ -77,6 +77,10 @@ a {
     background-color: #15151E;
 }
 
+.bkg-white {
+    background-color: white;
+}
+
 .font-white {
     color: white;
 }
@@ -254,11 +258,34 @@ img.ad {
     font-size: 15px;
 }
 
+.past-races img,
+.next-race img {
+    border-radius: 5px;
+}
+
 .past-races > div:nth-child(1),
 .next-race > div {
     border-top-right-radius: 25px;
     margin-top: 20px;
     padding: 20px 20px 0 0;
+}
+
+.past-races hr,
+.next-race hr {
+    margin: 10px 0px;
+    height: 1px;
+}
+
+.past-races .races > div > div,
+.next-race > div > div > div {
+    justify-content: space-between;
+}
+
+.past-races .races > div > div > img,
+.next-race > div > div > div img {
+    border: 1px solid #38383f;
+    border-radius: 5px;
+    height: fit-content;
 }
 
 /* Past Races */
@@ -282,14 +309,6 @@ img.ad {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.past-races .races > div > h2:nth-child(3) {
-    background-color: #15151E;
-    width: fit-content;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 5px;
-}
-
 .past-races .races > div {
     border-top: 2px solid #15151E;
     border-right: 2px solid #15151E;
@@ -298,17 +317,55 @@ img.ad {
     padding: 10px 10px 0px 0px;
 }
 
-.past-races hr {
-    margin: 10px 0px;
-    height: 1px;
-}
-
 /* Next Race */
 
 .next-race > div {
     border-top: 10px solid #e10600;
     border-right: 10px solid #e10600;
 }
+
+.next-race {
+    color: white;
+}
+
+.next-race .flex:nth-child(1){
+    gap: 20px;
+}
+
+.next-race h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.next-race .flex {
+    justify-content: space-between;
+}
+
+.next-race .bkg-image {
+    gap: 40px;
+    width: 100%;
+    background-image: url(assets/schedule_azerbaijan.webp);
+    background-position: 50% 75%;
+    justify-content: end;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.next-race .schedule-bubble {
+    margin-right: 20px;
+    height: fit-content;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+.next-race .schedule-bubble .col-2 {
+    color: #949498;
+}
+
+.next-race .schedule-bubble .col-3 {
+    text-align: center;
+}
+
 
 /* --------- Responsive --------- */
 
