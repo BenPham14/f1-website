@@ -163,6 +163,15 @@ a {
 
 /* News */
 
+.top-stories > div {
+    border-top: 10px solid #e10600;
+    border-right: 10px solid #e10600;
+    border-bottom: 10px solid #e10600;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 20px 20px 20px 0;
+}
+
 .news img {
     width: 310px;
     height: auto;
@@ -245,6 +254,39 @@ img.ad {
 
 /* ---------- Schedule ---------- */
 
-title {
-    color:#15151E;
+.past-races > div:nth-child(1) {
+    border-top: 10px solid #15151E;
+    border-right: 10px solid #15151E;
+    border-top-right-radius: 25px;
+    margin-top: 20px;
+    padding: 20px 20px 0 0;
+    justify-content: space-between;
+}
+
+.past-races > div:nth-child(1) > div:nth-child(2) {
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.past-races > div:nth-child(2) {
+    gap: 20px;
+}
+
+.past-races > div:nth-child(2) > div {
+    border-top: 2px solid #15151E;
+    border-right: 2px solid #15151E;
+    border-top-right-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 10px 0px 0px;
+}
+
+.past-races hr {
+    margin: 10px 0px;
+    height: 1px;
+}
+
+.past-races h4 {
+    margin: 0 0 5px;
+    font-size: 15px;
 }
