@@ -258,34 +258,45 @@ img.ad {
     font-size: 15px;
 }
 
-.past-races img,
-.next-race img {
+.schedule img {
     border-radius: 5px;
 }
 
-.past-races > div:nth-child(1),
-.next-race > div {
-    border-top-right-radius: 25px;
-    margin-top: 20px;
-    padding: 20px 20px 0 0;
-}
-
-.past-races hr,
-.next-race hr {
+.schedule hr {
     margin: 10px 0px;
     height: 1px;
 }
 
-.past-races .races > div > div,
-.next-race > div > div > div {
+.schedule .races > div > div,
+.upcoming-race > div > div > div {
     justify-content: space-between;
 }
 
-.past-races .races > div > div > img,
-.next-race > div > div > div img {
+.schedule .races {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.schedule .races > div {
+    border-top: 2px solid #15151E;
+    border-right: 2px solid #15151E;
+    border-top-right-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 10px 0px 0px;
+}
+
+.schedule .flag {
     border: 1px solid #38383f;
     border-radius: 5px;
     height: fit-content;
+}
+
+.past-races > div:nth-child(1),
+.upcoming-race > div {
+    border-top-right-radius: 25px;
+    margin-top: 20px;
+    padding: 20px 20px 0 0;
 }
 
 /* Past Races */
@@ -303,45 +314,31 @@ img.ad {
     width: fit-content;
 }
 
-.past-races .races {
-    gap: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+/* Upcoming Race */
 
-.past-races .races > div {
-    border-top: 2px solid #15151E;
-    border-right: 2px solid #15151E;
-    border-top-right-radius: 10px;
-    margin-top: 20px;
-    padding: 10px 10px 0px 0px;
-}
-
-/* Next Race */
-
-.next-race > div {
+.upcoming-race > div {
     border-top: 10px solid #e10600;
     border-right: 10px solid #e10600;
 }
 
-.next-race {
+.upcoming-race {
     color: white;
 }
 
-.next-race .flex:nth-child(1){
+.upcoming-race .flex:nth-child(1){
     gap: 20px;
 }
 
-.next-race h1 {
+.upcoming-race h1 {
     font-size: 42px;
     margin-bottom: 5px;
 }
 
-.next-race .flex {
+.upcoming-race .flex {
     justify-content: space-between;
 }
 
-.next-race .bkg-image {
+.upcoming-race .bkg-image {
     gap: 40px;
     width: 100%;
     background-image: url(assets/schedule_azerbaijan.webp);
@@ -351,20 +348,23 @@ img.ad {
     border-radius: 10px;
 }
 
-.next-race .schedule-bubble {
+.upcoming-race .schedule-bubble {
     margin-right: 20px;
     height: fit-content;
     padding: 0 15px;
     border-radius: 10px;
 }
 
-.next-race .schedule-bubble .col-2 {
+.upcoming-race .schedule-bubble .col-2 {
     color: #949498;
 }
 
-.next-race .schedule-bubble .col-3 {
+.upcoming-race .schedule-bubble .col-3 {
     text-align: center;
 }
+
+/* Next Races */
+
 
 
 /* --------- Responsive --------- */
@@ -377,13 +377,13 @@ img.ad {
 }
 
 @media only screen and (max-width: 1360px) {
-    .past-races .races {
+    .schedule .races {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media only screen and (max-width: 1055px) {
-    .past-races .races {
+    .schedule .races {
         grid-template-columns: 1fr 1fr;
     }
 }
