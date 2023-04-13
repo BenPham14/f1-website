@@ -85,6 +85,22 @@ a {
     color: white;
 }
 
+.bkg-grid-white {
+    background-image: url(assets/plus-white-x2.webp);
+    background-repeat: repeat;
+    background-size: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bkg-grid {
+    background-image: url(assets/plus-x2.webp);
+    background-repeat: repeat;
+    background-size: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
 /* ---------- Navigation ---------- */
 
 .nav-bar {
@@ -184,15 +200,16 @@ a {
 
 .news-content {
     width: 310px;
-    border: 1px solid #d0d0d2;
-    border-radius: 15px 0px 15px 0px;
-    overflow: hidden;
-    flex-shrink: 0;
 }
 
 .news-content-text {
-    padding: 15px 20px 40px;
+    margin-top: 15px;
+    padding: 0px 20px 40px;
     color: #15151E;
+    border-right: 1px solid #d0d0d2;
+    border-bottom: 1px solid #d0d0d2;
+    border-radius: 0px 0px 15px 0px;
+    overflow: hidden;
 }
 
 /* Technical */
@@ -205,15 +222,16 @@ a {
 
 .technical-content {
     width: 310px;
-    border: 1px solid #38383f;
-    border-radius: 15px 0px 15px 0px;
-    overflow: hidden;
-    flex-shrink: 0;
 }
 
 .technical-content-text {
-    padding: 15px 20px 40px;
+    margin-top: 15px;
+    padding: 0px 20px 40px;
     color: white;
+    border-right: 1px solid #38383f;
+    border-bottom: 1px solid #38383f;
+    border-radius: 0px 0px 15px 0px;
+    overflow: hidden;
 }
 
 .technical-content.feature,
@@ -343,6 +361,7 @@ img.ad {
     width: 100%;
     background-image: url(assets/schedule_azerbaijan.webp);
     background-position: 50% 75%;
+    background-size: cover;
     justify-content: end;
     align-items: center;
     border-radius: 10px;
