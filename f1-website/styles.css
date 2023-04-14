@@ -61,6 +61,10 @@ hr {
     flex-direction: column;
 }
 
+.grid {
+    display: grid;
+}
+
 a {
     text-decoration: none;
 }
@@ -176,7 +180,22 @@ a {
     font-size: 16px;
 }
 
+.technical .grid:last-child,
+.more-news .grid:last-child,
+.explore .grid:last-child {
+    margin-right: 100%;
+}
+
+.top-stories .grid:last-child {
+    padding-right: 100%;
+}
+
 /* News */
+
+.top-stories .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
 
 .top-stories > div {
     border-top: 10px solid #e10600;
@@ -212,6 +231,15 @@ a {
     overflow: hidden;
 }
 
+.more-news .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.more-news .ad {
+    aspect-ratio: unset;
+}
+
 /* Technical */
 
 .technical img {
@@ -243,11 +271,12 @@ a {
     font-size: 18px;
 }
 
-/* Explore */
-
-img.ad {
-    object-fit: scale-down;
+.technical .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
+
+/* Explore */
 
 .explore img{
     border-radius: 15px 15px 0px 0px;
@@ -267,6 +296,11 @@ img.ad {
     transform: translate(-50%, -50%);
     font-weight: bold;
     font-size: 25px;
+}
+
+.explore .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 /* ---------- Schedule ---------- */
@@ -290,9 +324,8 @@ img.ad {
     justify-content: space-between;
 }
 
-.schedule .races {
+.schedule .grid {
     gap: 20px;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -382,10 +415,6 @@ img.ad {
     text-align: center;
 }
 
-/* Next Races */
-
-
-
 /* --------- Responsive --------- */
 
 @media only screen and (min-width: 1360px) {
@@ -396,14 +425,28 @@ img.ad {
 }
 
 @media only screen and (max-width: 1360px) {
-    .schedule .races {
+    .schedule .grid,
+    .more-news .grid,
+    .explore .grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .top-stories .grid,
+    .technical .grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media only screen and (max-width: 1055px) {
-    .schedule .races {
+    .schedule .grid,
+    .more-news .grid,
+    .explore .grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .top-stories .grid-col-span-2,
+    .technical .grid-col-span-2 {
+        grid-column: span 2;
     }
 }
 
