@@ -231,6 +231,12 @@ a {
     overflow: hidden;
 }
 
+.news-content-text:hover,
+.technical-content-text:hover {
+    border-right: 1px solid #e10600;
+    border-bottom: 1px solid #e10600;
+}
+
 .more-news .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
@@ -337,6 +343,12 @@ a {
     padding: 10px 10px 0px 0px;
 }
 
+.schedule .races > div:hover {
+    border-top: 2px solid #e10600;
+    border-right: 2px solid #e10600;
+    cursor: pointer;
+}
+
 .schedule .flag {
     border: 1px solid #38383f;
     border-radius: 5px;
@@ -358,11 +370,25 @@ a {
     justify-content: space-between;
 }
 
-.past-races > div:nth-child(1) > div:nth-child(2) {
-    border: 1px solid #ededed;
-    border-radius: 5px;
+.past-races > .flex > div:nth-child(2) > div {
+    border-right: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
     padding: 20px;
     width: fit-content;
+    cursor: pointer;
+}
+
+.past-races > .flex > div:nth-child(2) > div:nth-child(1) {
+    background-color: #e10600;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.past-races > .flex > div:nth-child(2) > div:nth-child(2) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 /* Upcoming Race */
