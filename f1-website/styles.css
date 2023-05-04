@@ -129,6 +129,7 @@ a {
 .nav-bar .left-links a:hover,
 .nav-bar .right-links a:hover {
     background-color: #15151E;
+    cursor: pointer;
 }
 
 .nav-bar .left-links ul {
@@ -229,12 +230,6 @@ a {
     border-bottom: 1px solid #d0d0d2;
     border-radius: 0px 0px 15px 0px;
     overflow: hidden;
-}
-
-.news-content-text:hover,
-.technical-content-text:hover {
-    border-right: 1px solid #e10600;
-    border-bottom: 1px solid #e10600;
 }
 
 .more-news .grid {
