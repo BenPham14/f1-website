@@ -259,11 +259,6 @@ a {
     overflow: hidden;
 }
 
-.technical-content.feature,
-.technical-content.feature img {
-    width: 620px;
-}
-
 .technical-content.feature p {
     font-size: 18px;
 }
@@ -443,6 +438,11 @@ a {
     .news-content {
         width: 310px;
     }
+
+    .technical-content.feature,
+    .technical-content.feature img {
+        width: 620px;
+    }
 }
 
 @media only screen and (max-width: 1360px) and (min-width: 1055px) {
@@ -450,32 +450,41 @@ a {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .technical .grid,
+    /* .technical .grid, */
     .more-news .grid,
     .explore .grid {
         grid-template-columns: 1fr 1fr;
     }
 
     .latest .content {
-        width: 1000px;
+        width: 1060px;
         margin: 0 auto;
     }
 
     .top-stories .news-content,
-    .top-stories .news-content img {
-        width: 200px;
+    .top-stories .news-content img,
+    .technical-content,
+    .technical-content img,
+    .technical video {
+        width: 210px;
     }
 
     .top-stories video {
-        width: 480px;
+        width: 520px;
     }
 
-    .more-news .news-content img {
-        width: 460px;
-    }
-
+    .more-news .news-content img,
     .explore img {
-        width: 460px;
+        width: 490px;
+    }
+
+    .more-news .ad {
+        width: 330px;
+    }
+
+    .technical-content.feature img,
+    .technical-content.feature {
+        width: 540px;
     }
 }
 
@@ -497,11 +506,6 @@ a {
     .latest .content {
         width: 710px;
         margin: 0 auto;
-    }
-
-    .top-stories .news-content,
-    .top-stories .news-content img {
-        width: 310px;
     }
 
     .top-stories video {
