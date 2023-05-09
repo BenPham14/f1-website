@@ -4,7 +4,11 @@
 * {
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -31,7 +35,7 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
 }
@@ -44,7 +48,7 @@ h3 {
 h4 {
     color: #e10600;
     margin: 0;
-    font-size: 11px;
+    font-size: 1.1rem;
 }
 
 hr {
@@ -162,7 +166,7 @@ a {
 }
 
 .footer p {
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 /* ---------- Latest ---------- */
@@ -178,7 +182,7 @@ a {
 .news-content-text p,
 .technical-content-text p {
     margin: 0;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 /* .technical .grid:last-child,
@@ -189,6 +193,10 @@ a {
 
 .top-stories .grid:last-child {
     padding-right: 100%;
+}
+
+.news-content {
+    overflow: hidden;
 }
 
 /* News */
@@ -260,7 +268,7 @@ a {
 }
 
 .technical-content.feature p {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .technical .grid {
@@ -271,13 +279,11 @@ a {
 /* Explore */
 
 .explore img{
-    border-radius: 15px 15px 0px 0px;
     filter: brightness(50%);
 }
 
 .explore .container {
     position: relative;
-    text-align: center;
     color: white;
 }
 
@@ -287,7 +293,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .explore .grid {
@@ -295,11 +301,16 @@ a {
     gap: 20px;
 }
 
+.explore a {
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+}
+
 /* ---------- Schedule ---------- */
 
 .schedule h4 {
     margin: 0 0 5px;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .schedule img {
@@ -393,7 +404,7 @@ a {
 }
 
 .upcoming-race h1 {
-    font-size: 42px;
+    font-size: 4.2rem;
     margin-bottom: 5px;
 }
 
