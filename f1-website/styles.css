@@ -473,12 +473,9 @@ a {
     cursor: pointer;
 }
 
+.driver-button,
 .team-button {
     background-color: #ededed;
-}
-
-.driver-button {
-    background-color: #d0d0d2;
 }
 
 /* --------- Responsive --------- */
