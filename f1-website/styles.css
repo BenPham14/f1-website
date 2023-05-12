@@ -427,6 +427,62 @@ a {
     text-align: center;
 }
 
+/* --------- Results --------- */
+
+.results table,
+.results h2,
+.results button {
+    margin-top: 20px;
+}
+
+.results button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.results table {
+    border-collapse: collapse;
+    min-width: 100%;
+}
+
+.results th {
+    color: gray;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.results td {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+.results td, th {
+    padding: 18px 20px 14px;
+}
+
+.results tbody tr:nth-child(odd) {
+    background-color: #ededed;
+}
+
+.results table:has(#myTable) tr th {
+    cursor: pointer;
+}
+
+.team-button {
+    background-color: #ededed;
+}
+
+.driver-button {
+    background-color: #d0d0d2;
+}
+
+
+
 /* --------- Responsive --------- */
 
 @media only screen and (min-width: 1360px) { /** width >= 1360px **/
@@ -549,8 +605,8 @@ a {
     .top-stories video {
         max-width: 360px;
     }
-    .top-stories .news-content img,
-    .more-news .news-content img {
+    
+    .hide-for-mobile {
         display: none;
     }
     
@@ -563,9 +619,20 @@ a {
     .explore img {
         max-width: 374px;
     }
+}
 
-    .technical-content video,
-    .technical-content #second {
-        display: none;
+@media only screen and (max-width: 431px) { /** width <= 710px **/
+    .latest .content {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+
+    .top-stories video {
+        max-width: 300px;
+    }   
+
+    .technical-content.feature img,
+    .explore img {
+        max-width: 315px;
     }
 }
