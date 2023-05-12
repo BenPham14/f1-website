@@ -20,7 +20,7 @@ driverTable.innerHTML = `
     </table>
 `;
 
-const driverStandings = driverStandingsObjectArray.map((driver) => {
+const driverTableData = driverStandingsObjectArray.map((driver) => {
     const content = document.createElement('tr');
     content.innerHTML = `
         <td>${driver.position}</td>
@@ -29,12 +29,11 @@ const driverStandings = driverStandingsObjectArray.map((driver) => {
         <td>${driver.car}</td>
         <td>${driver.points}</td>
     `;
-
     return content;
 });
 
 document.querySelector(".standings-table > div").append(driverTable);
-driverStandings.forEach(driver => {
+driverTableData.forEach(driver => {
     document.querySelector('.driver-table-data').append(driver);
 });
 
@@ -56,19 +55,18 @@ teamTable.innerHTML = `
     </table>
 `;
 
-const teamStandings = teamStandingsObjectArray.map((team) => {
+const teamTableData = teamStandingsObjectArray.map((team) => {
     const content = document.createElement('tr');
     content.innerHTML = `
         <td>${team.position}</td>
         <td>${team.team}</td>
         <td>${team.points}</td>
     `;
-
     return content;
 });
 
 document.querySelector(".standings-table > div").append(teamTable);
-teamStandings.forEach(team => {
+teamTableData.forEach(team => {
     document.querySelector('.team-table-data').append(team);
 });
 
@@ -79,12 +77,10 @@ driverButton.addEventListener('click', () => openTable('driver', true));
 teamButton.addEventListener('click', () => openTable('team', false));
 
 const openTable = (tableName, tabActive) => {
-    let i, tabContent
-    tabContent = document.querySelectorAll(".tab-content");
-    for (i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
-    }
-    document.getElementById(tableName).style.display = "block";
+    const tabContent = document.querySelectorAll(".tab-content");
+    tabContent.forEach(table => table.style.display = "none");
+
+    document.getElementById(tableName).style.display = "";
 
     if (tabActive) {
         driverButton.style.backgroundColor = "#d0d0d2";
