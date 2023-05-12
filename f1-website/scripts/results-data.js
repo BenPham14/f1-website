@@ -14,17 +14,17 @@ class DriverStandings {
     }
 };
 
-// class TeamStandings {
-//     constructor (
-//         position,
-//         team,
-//         points
-//     ) {
-//         this.position = position;
-//         this.team = team;
-//         this.points = points;
-//     }
-// };
+class TeamStandings {
+    constructor (
+        position,
+        team,
+        points
+    ) {
+        this.position = position;
+        this.team = team;
+        this.points = points;
+    }
+};
 
 const ver = new DriverStandings (
     1,
@@ -186,6 +186,67 @@ const vri = new DriverStandings (
     0
 );
 
-const standingsArray = [ver, per, alo, ham, sai, str, rus, nor, hul, lec, bot, pia, oco, gas, gua, tsu, mag, alb, sar, vri];
+const rb = new TeamStandings (
+    1,
+    "RED BULL RACING HONDA RBPT",
+    ver.points + per.points
+)
 
-export default standingsArray;
+const amr = new TeamStandings (
+    2,
+    "ASTON MARTIN ARAMCO MERCEDES",
+    alo.points + str.points
+)
+
+const merc = new TeamStandings (
+    3,
+    "MERCEDES",
+    ham.points + rus.points
+)
+
+const fer = new TeamStandings (
+    4,
+    "FERRARI",
+    lec.points + sai.points
+)
+
+const mcl = new TeamStandings (
+    5,
+    "MCLAREN MERCEDES",
+    nor.points + pia.points
+)
+
+const alp = new TeamStandings (
+    6,
+    "ALPINE RENAULT",
+    gas.points + oco.points
+)
+
+const haas = new TeamStandings (
+    7,
+    "HAAS FERRARI",
+    mag.points + hul.points
+)
+
+const alfa = new TeamStandings (
+    8,
+    "ALFA ROMEO FERRARI",
+    bot.points + gua.points
+)
+
+const at = new TeamStandings (
+    9,
+    "ALPHATAURI HONDA RBPT",
+    tsu.points + vri.points
+)
+
+const will = new TeamStandings (
+    10,
+    "WILLIAMS MERCEDES",
+    alb.points + sar.points
+)
+
+const driverStandingsObjectArray = [ver, per, alo, ham, sai, str, rus, nor, hul, lec, bot, pia, oco, gas, gua, tsu, mag, alb, sar, vri];
+const teamStandingsObjectArray = [rb, amr, merc, fer, mcl, alp, haas, alfa, at, will]
+
+export {driverStandingsObjectArray, teamStandingsObjectArray};
