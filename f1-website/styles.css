@@ -473,9 +473,27 @@ a {
     cursor: pointer;
 }
 
-.driver-button,
-.team-button {
+.results .race-table {
+    border-top: 10px solid #e10600;
+    border-right: 10px solid #e10600;
+    border-top-right-radius: 25px;
+    padding: 0 20px 0 0;
+    margin-top: 20px;
+}
+
+.results .driver-button,
+.results .team-button {
     background-color: #ededed;
+}
+
+.results .tab-content {
+    border-top: 10px solid #15151E;
+    border-right: 10px solid #15151E;
+    border-bottom: 10px solid #15151E;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 0 20px 20px 0;
+    margin-top: 20px;
 }
 
 /* --------- Responsive --------- */

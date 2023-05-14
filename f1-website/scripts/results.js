@@ -70,14 +70,11 @@ teamTableData.forEach(team => {
     document.querySelector('.team-table-data').append(team);
 });
 
-const driverButton = document.querySelector('.driver-button');
-const teamButton = document.querySelector('.team-button');
-
-driverButton.addEventListener('click', () => openTable('driver', true));
-teamButton.addEventListener('click', () => openTable('team', false));
+const driverButton = document.querySelector('.results .driver-button');
+const teamButton = document.querySelector('.results .team-button');
 
 const openTable = (tableName, tabActive) => {
-    const tabContent = document.querySelectorAll(".tab-content");
+    const tabContent = document.querySelectorAll(".results .tab-content");
     tabContent.forEach(table => table.style.display = "none");
 
     document.getElementById(tableName).style.display = "";
@@ -90,6 +87,9 @@ const openTable = (tableName, tabActive) => {
         teamButton.style.backgroundColor = "#d0d0d2";
     }
 }
+
+driverButton.addEventListener('click', () => openTable('driver', true));
+teamButton.addEventListener('click', () => openTable('team', false));
   
 document.getElementById("default-open").click();
 
