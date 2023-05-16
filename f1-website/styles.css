@@ -496,6 +496,49 @@ a {
     margin-top: 20px;
 }
 
+/* --------- Teams --------- */
+
+.teams .teams-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.teams .team {
+    border-top: 2px solid #15151E;
+    border-right: 2px solid #15151E;
+    border-top-right-radius: 10px;
+    padding: 10px 10px 0px 0px;
+}
+
+.teams .team > div:nth-child(1) {
+    justify-content: space-between;
+    border-bottom: 1px solid #38383f;
+    margin-bottom: 10px;
+}
+
+.teams .teams-grid .name {
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #38383f;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.teams .teams-grid .drivers {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.teams .team .driver {
+    border-bottom: 1px solid #38383f;
+    border-right: 1px solid #38383f;
+    border-bottom-right-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2px;
+    margin-bottom: 10px;
+}
+
 /* --------- Responsive --------- */
 
 @media only screen and (min-width: 1360px) { /** width >= 1360px **/
