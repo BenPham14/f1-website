@@ -50,7 +50,7 @@ const ver = new DriverStandings (
     "NED",
     "RED BULL RACING HONDA RBPT",
     69,
-    // "assets/maxver01.webp"
+    "assets/maxver01.webp"
 );
 
 const per = new DriverStandings (
@@ -59,7 +59,7 @@ const per = new DriverStandings (
     "MEX",
     "RED BULL RACING HONDA RBPT",
     54,
-    // "assets/serper01.webp"
+    "assets/serper01.webp"
 );
 
 const alo = new DriverStandings (
@@ -67,7 +67,8 @@ const alo = new DriverStandings (
     "Fernando Alonso",
     "ESP",
     "ASTON MARTIN ARAMCO MERCEDES",
-    45
+    45,
+    "assets/feralo01.webp"
 );
 
 const ham = new DriverStandings (
@@ -75,7 +76,8 @@ const ham = new DriverStandings (
     "Lewis Hamilton",
     "GBR",
     "MERCEDES",
-    38
+    38,
+    "assets/lewham01.webp"
 );
 
 const sai = new DriverStandings (
@@ -83,7 +85,8 @@ const sai = new DriverStandings (
     "Carlos Sainz",
     "ESP",
     "FERRARI",
-    20
+    20,
+    "assets/carsai01.webp"
 );
 
 const str = new DriverStandings (
@@ -91,7 +94,8 @@ const str = new DriverStandings (
     "Lance Stroll",
     "CAN",
     "ASTON MARTIN ARAMCO MERCEDES",
-    20
+    20,
+    "assets/lanstr01.webp"
 );
 
 const rus = new DriverStandings (
@@ -99,7 +103,8 @@ const rus = new DriverStandings (
     "George Russell",
     "GBR",
     "MERCEDES",
-    18
+    18,
+    "assets/georus01.webp"
 );
 
 const nor = new DriverStandings (
@@ -107,7 +112,8 @@ const nor = new DriverStandings (
     "Lando Norris",
     "GBR",
     "MCLAREN MERCEDES",
-    8
+    8,
+    "assets/lannor01.webp"
 );
 
 const hul = new DriverStandings (
@@ -115,7 +121,8 @@ const hul = new DriverStandings (
     "Nico Hulkenberg",
     "GER",
     "HAAS FERRARI",
-    6
+    6,
+    "assets/nichul01.webp"
 );
 
 const lec = new DriverStandings (
@@ -123,7 +130,8 @@ const lec = new DriverStandings (
     "Charles Leclerc",
     "MON",
     "FERRARI",
-    6
+    6,
+    "assets/chalec01.webp"
 );
 
 const bot = new DriverStandings (
@@ -131,7 +139,8 @@ const bot = new DriverStandings (
     "Valtteri Bottas",
     "FIN",
     "ALFA ROMEO FERRARI",
-    4
+    4,
+    "assets/valbot01.webp"
 );
 
 const pia = new DriverStandings (
@@ -139,7 +148,8 @@ const pia = new DriverStandings (
     "Oscar Piastri",
     "AUS",
     "MCLAREN MERCEDES",
-    4
+    4,
+    "assets/oscpia01.webp"
 );
 
 const oco = new DriverStandings (
@@ -147,7 +157,8 @@ const oco = new DriverStandings (
     "Esteban Ocon",
     "FRA",
     "ALPINE RENAULT",
-    4
+    4,
+    "assets/estoco01.webp"
 );
 
 const gas = new DriverStandings (
@@ -155,7 +166,8 @@ const gas = new DriverStandings (
     "Pierre Gasly",
     "FRA",
     "ALPINE RENAULT",
-    4
+    4,
+    "assets/piegas01.webp"
 );
 
 const gua = new DriverStandings (
@@ -163,7 +175,8 @@ const gua = new DriverStandings (
     "Zhou Guanyu",
     "CHN",
     "ALFA ROMEO FERRARI",
-    2
+    2,
+    "assets/guazho01.webp"
 );
 
 const tsu = new DriverStandings (
@@ -171,7 +184,8 @@ const tsu = new DriverStandings (
     "Yuki Tsunoda",
     "JPN",
     "ALPHATAURI HONDA RBPT",
-    1
+    1,
+    "assets/yuktsu01.webp"
 );
 
 const mag = new DriverStandings (
@@ -179,7 +193,8 @@ const mag = new DriverStandings (
     "Kevin Magnussen",
     "DEN",
     "HAAS FERRARI",
-    1
+    1,
+    "assets/kevmag01.webp"
 );
 
 const alb = new DriverStandings (
@@ -187,7 +202,8 @@ const alb = new DriverStandings (
     "Alex Albon",
     "THA",
     "WILLIAMS MERCEDES",
-    1
+    1,
+    "assets/alealb01.webp"
 );
 
 const sar = new DriverStandings (
@@ -195,7 +211,8 @@ const sar = new DriverStandings (
     "Logan Sargeant",
     "USA",
     "WILLIAMS MERCEDES",
-    0
+    0,
+    "assets/logsar01.webp"
 );
 
 const vri = new DriverStandings (
@@ -203,7 +220,8 @@ const vri = new DriverStandings (
     "Nyck De Vries",
     "NED",
     "ALPHATAURI HONDA RBPT",
-    0
+    0,
+    "assets/nycdev01.webp"
 );
 
 const rb = new TeamStandings (
@@ -212,10 +230,10 @@ const rb = new TeamStandings (
     ver.points + per.points,
     ver,
     per,
-    // "assets/red-bull-racing-logo.webp",
-    // "Red Bull Logo",
-    // "assets/red-bull-racing.webp",
-    // "Red Bull Car"
+    "assets/red-bull-racing-logo.webp",
+    "Red Bull Logo",
+    "assets/red-bull-racing.webp",
+    "Red Bull Car"
 );
 
 const amr = new TeamStandings (
@@ -223,7 +241,11 @@ const amr = new TeamStandings (
     "ASTON MARTIN ARAMCO MERCEDES",
     alo.points + str.points,
     alo,
-    str
+    str,
+    "assets/aston-martin-logo.webp",
+    "Aston Martin Logo",
+    "assets/aston-martin.webp",
+    "Aston Martin Car"
 );
 
 const merc = new TeamStandings (
@@ -231,7 +253,11 @@ const merc = new TeamStandings (
     "MERCEDES",
     ham.points + rus.points,
     ham,
-    rus
+    rus,
+    "assets/mercedes-logo.webp",
+    "Mercedes Logo",
+    "assets/mercedes.webp",
+    "Mercedes Car"
 );
 
 const fer = new TeamStandings (
@@ -239,7 +265,11 @@ const fer = new TeamStandings (
     "FERRARI",
     lec.points + sai.points,
     lec,
-    sai
+    sai,
+    "assets/ferrari-logo.webp",
+    "Ferrari Logo",
+    "assets/ferrari.webp",
+    "Ferrari Car"
 );
 
 const mcl = new TeamStandings (
@@ -247,7 +277,11 @@ const mcl = new TeamStandings (
     "MCLAREN MERCEDES",
     nor.points + pia.points,
     nor,
-    pia
+    pia,
+    "assets/mclaren-logo.webp",
+    "Mclaren Logo",
+    "assets/mclaren.webp",
+    "Mclaren Car"
 );
 
 const alp = new TeamStandings (
@@ -255,7 +289,11 @@ const alp = new TeamStandings (
     "ALPINE RENAULT",
     gas.points + oco.points,
     gas,
-    oco
+    oco,
+    "assets/alpine-logo.webp",
+    "Alpine Logo",
+    "assets/alpine.webp",
+    "Alpine Car"
 );
 
 const haas = new TeamStandings (
@@ -263,7 +301,11 @@ const haas = new TeamStandings (
     "HAAS FERRARI",
     mag.points + hul.points,
     mag,
-    hul
+    hul,
+    "assets/haas-f1-team-logo.webp",
+    "Haas Logo",
+    "assets/haas-f1-team.webp",
+    "Haas Car"
 );
 
 const alfa = new TeamStandings (
@@ -271,7 +313,11 @@ const alfa = new TeamStandings (
     "ALFA ROMEO FERRARI",
     bot.points + gua.points,
     bot,
-    gua
+    gua,
+    "assets/alfa-romeo-logo.webp",
+    "Alfa Romeo Logo",
+    "assets/alfa-romeo.webp",
+    "Alfa Romeo Car"
 );
 
 const at = new TeamStandings (
@@ -279,7 +325,11 @@ const at = new TeamStandings (
     "ALPHATAURI HONDA RBPT",
     tsu.points + vri.points,
     tsu,
-    vri
+    vri,
+    "assets/alphatauri-logo.webp",
+    "Alphatauri Logo",
+    "assets/alphatauri.webp",
+    "Alfatauri Car"
 );
 
 const will = new TeamStandings (
@@ -287,7 +337,11 @@ const will = new TeamStandings (
     "WILLIAMS MERCEDES",
     alb.points + sar.points,
     alb,
-    sar
+    sar,
+    "assets/williams-logo.webp",
+    "Williams Logo",
+    "assets/williams.webp",
+    "Williams Car"
 );
 
 const driverStandingsObjectArray = [ver, per, alo, ham, sai, str, rus, nor, hul, lec, bot, pia, oco, gas, gua, tsu, mag, alb, sar, vri];
