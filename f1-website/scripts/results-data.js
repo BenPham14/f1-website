@@ -4,13 +4,15 @@ class DriverStandings {
         driver,
         nationality,
         car,
-        points
+        points,
+        image
     ) {
         this.position = position;
         this.driver = driver;
         this.nationality = nationality;
         this.car = car;
         this.points = points;
+        this.image = image;
     }
 };
 
@@ -18,11 +20,27 @@ class TeamStandings {
     constructor (
         position,
         team,
-        points
+        points,
+        driver1,
+        driver2,
+        logo,
+        logoAlt,
+        car,
+        carImageAlt
     ) {
         this.position = position;
         this.team = team;
         this.points = points;
+        this.driver1 = driver1;
+        this.driver2 = driver2;
+        this.logoImage = {
+            image: logo,
+            alt: logoAlt
+        }
+        this.carImage = {
+            image: car,
+            alt: carImageAlt
+        }
     }
 };
 
@@ -31,7 +49,8 @@ const ver = new DriverStandings (
     "Max Verstappen",
     "NED",
     "RED BULL RACING HONDA RBPT",
-    69
+    69,
+    // "assets/maxver01.webp"
 );
 
 const per = new DriverStandings (
@@ -39,7 +58,8 @@ const per = new DriverStandings (
     "Sergio Perez",
     "MEX",
     "RED BULL RACING HONDA RBPT",
-    54
+    54,
+    // "assets/serper01.webp"
 );
 
 const alo = new DriverStandings (
@@ -189,62 +209,86 @@ const vri = new DriverStandings (
 const rb = new TeamStandings (
     1,
     "RED BULL RACING HONDA RBPT",
-    ver.points + per.points
-)
+    ver.points + per.points,
+    ver,
+    per,
+    // "assets/red-bull-racing-logo.webp",
+    // "Red Bull Logo",
+    // "assets/red-bull-racing.webp",
+    // "Red Bull Car"
+);
 
 const amr = new TeamStandings (
     2,
     "ASTON MARTIN ARAMCO MERCEDES",
-    alo.points + str.points
-)
+    alo.points + str.points,
+    alo,
+    str
+);
 
 const merc = new TeamStandings (
     3,
     "MERCEDES",
-    ham.points + rus.points
-)
+    ham.points + rus.points,
+    ham,
+    rus
+);
 
 const fer = new TeamStandings (
     4,
     "FERRARI",
-    lec.points + sai.points
-)
+    lec.points + sai.points,
+    lec,
+    sai
+);
 
 const mcl = new TeamStandings (
     5,
     "MCLAREN MERCEDES",
-    nor.points + pia.points
-)
+    nor.points + pia.points,
+    nor,
+    pia
+);
 
 const alp = new TeamStandings (
     6,
     "ALPINE RENAULT",
-    gas.points + oco.points
-)
+    gas.points + oco.points,
+    gas,
+    oco
+);
 
 const haas = new TeamStandings (
     7,
     "HAAS FERRARI",
-    mag.points + hul.points
-)
+    mag.points + hul.points,
+    mag,
+    hul
+);
 
 const alfa = new TeamStandings (
     8,
     "ALFA ROMEO FERRARI",
-    bot.points + gua.points
-)
+    bot.points + gua.points,
+    bot,
+    gua
+);
 
 const at = new TeamStandings (
     9,
     "ALPHATAURI HONDA RBPT",
-    tsu.points + vri.points
-)
+    tsu.points + vri.points,
+    tsu,
+    vri
+);
 
 const will = new TeamStandings (
     10,
     "WILLIAMS MERCEDES",
-    alb.points + sar.points
-)
+    alb.points + sar.points,
+    alb,
+    sar
+);
 
 const driverStandingsObjectArray = [ver, per, alo, ham, sai, str, rus, nor, hul, lec, bot, pia, oco, gas, gua, tsu, mag, alb, sar, vri];
 const teamStandingsObjectArray = [rb, amr, merc, fer, mcl, alp, haas, alfa, at, will]
