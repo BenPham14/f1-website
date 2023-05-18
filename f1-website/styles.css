@@ -28,6 +28,10 @@ section > div {
     padding: 10px 30px;
 }
 
+section:first-of-type {
+    padding-top: 70px;
+}
+
 h1 {
     font-size: 62px;
     font-weight: heavy;
@@ -111,6 +115,11 @@ a {
 
 /* ---------- Navigation ---------- */
 
+header {
+    position: fixed;
+    width: 100%;
+}
+
 .nav-bar {
     justify-content: space-between;
     align-items: center;
@@ -146,7 +155,8 @@ a {
     border: 2px solid white;
     border-radius: 5px;
     padding: 12px 26px;
-    margin-left: 191.65px;
+    margin-left: 124.26px;
+    margin-right: 10px;
 }
 
 .left-links a.active {
@@ -171,11 +181,11 @@ a {
 
 /* ---------- Latest ---------- */
 
-.latest h2 {
+.home h2 {
     margin: 20px 0;
 }
 
-.latest h4 {
+.home h4 {
     margin: 0px 0px 5px;
 }
 
@@ -584,7 +594,7 @@ a {
         grid-template-columns: 1fr 1fr;
     }
 
-    .latest .content {
+    .home .content {
         width: 1060px;
         margin: 0 auto;
     }
@@ -635,7 +645,7 @@ a {
         grid-column: span 2;
     }
 
-    .latest .content {
+    .home .content {
         width: 710px;
         margin: 0 auto;
     }
@@ -686,7 +696,7 @@ a {
         display: none;
     }
     
-    .latest .content {
+    .home .content {
         max-width: 435px;
         margin: 0 auto;
     }
@@ -702,7 +712,7 @@ a {
 }
 
 @media only screen and (max-width: 431px) { /** width <= 710px **/
-    .latest .content {
+    .home .content {
         max-width: 375px;
         margin: 0 auto;
     }
