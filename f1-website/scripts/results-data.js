@@ -1,4 +1,4 @@
-class DriverStandings {
+class Drivers {
     constructor (
         position,
         driver,
@@ -16,7 +16,7 @@ class DriverStandings {
     }
 };
 
-class TeamStandings {
+class Teams {
     constructor (
         position,
         team,
@@ -26,7 +26,8 @@ class TeamStandings {
         logo,
         logoAlt,
         car,
-        carImageAlt
+        carImageAlt,
+        color
     ) {
         this.position = position;
         this.team = team;
@@ -36,15 +37,18 @@ class TeamStandings {
         this.logoImage = {
             image: logo,
             alt: logoAlt
-        }
+        };
         this.carImage = {
             image: car,
             alt: carImageAlt
-        }
+        };
+        this.color = color;
     }
 };
 
-const ver = new DriverStandings (
+/** Drivers **/
+
+const ver = new Drivers (
     1,
     "Max Verstappen",
     "NED",
@@ -53,7 +57,7 @@ const ver = new DriverStandings (
     "assets/maxver01.webp"
 );
 
-const per = new DriverStandings (
+const per = new Drivers (
     2,
     "Sergio Perez",
     "MEX",
@@ -62,7 +66,7 @@ const per = new DriverStandings (
     "assets/serper01.webp"
 );
 
-const alo = new DriverStandings (
+const alo = new Drivers (
     3,
     "Fernando Alonso",
     "ESP",
@@ -71,7 +75,7 @@ const alo = new DriverStandings (
     "assets/feralo01.webp"
 );
 
-const ham = new DriverStandings (
+const ham = new Drivers (
     4,
     "Lewis Hamilton",
     "GBR",
@@ -80,7 +84,7 @@ const ham = new DriverStandings (
     "assets/lewham01.webp"
 );
 
-const sai = new DriverStandings (
+const sai = new Drivers (
     5,
     "Carlos Sainz",
     "ESP",
@@ -89,7 +93,7 @@ const sai = new DriverStandings (
     "assets/carsai01.webp"
 );
 
-const str = new DriverStandings (
+const str = new Drivers (
     6,
     "Lance Stroll",
     "CAN",
@@ -98,7 +102,7 @@ const str = new DriverStandings (
     "assets/lanstr01.webp"
 );
 
-const rus = new DriverStandings (
+const rus = new Drivers (
     7,
     "George Russell",
     "GBR",
@@ -107,7 +111,7 @@ const rus = new DriverStandings (
     "assets/georus01.webp"
 );
 
-const nor = new DriverStandings (
+const nor = new Drivers (
     8,
     "Lando Norris",
     "GBR",
@@ -116,7 +120,7 @@ const nor = new DriverStandings (
     "assets/lannor01.webp"
 );
 
-const hul = new DriverStandings (
+const hul = new Drivers (
     9,
     "Nico Hulkenberg",
     "GER",
@@ -125,7 +129,7 @@ const hul = new DriverStandings (
     "assets/nichul01.webp"
 );
 
-const lec = new DriverStandings (
+const lec = new Drivers (
     10,
     "Charles Leclerc",
     "MON",
@@ -134,7 +138,7 @@ const lec = new DriverStandings (
     "assets/chalec01.webp"
 );
 
-const bot = new DriverStandings (
+const bot = new Drivers (
     11,
     "Valtteri Bottas",
     "FIN",
@@ -143,7 +147,7 @@ const bot = new DriverStandings (
     "assets/valbot01.webp"
 );
 
-const pia = new DriverStandings (
+const pia = new Drivers (
     12,
     "Oscar Piastri",
     "AUS",
@@ -152,7 +156,7 @@ const pia = new DriverStandings (
     "assets/oscpia01.webp"
 );
 
-const oco = new DriverStandings (
+const oco = new Drivers (
     13,
     "Esteban Ocon",
     "FRA",
@@ -161,7 +165,7 @@ const oco = new DriverStandings (
     "assets/estoco01.webp"
 );
 
-const gas = new DriverStandings (
+const gas = new Drivers (
     14,
     "Pierre Gasly",
     "FRA",
@@ -170,7 +174,7 @@ const gas = new DriverStandings (
     "assets/piegas01.webp"
 );
 
-const gua = new DriverStandings (
+const gua = new Drivers (
     15,
     "Zhou Guanyu",
     "CHN",
@@ -179,7 +183,7 @@ const gua = new DriverStandings (
     "assets/guazho01.webp"
 );
 
-const tsu = new DriverStandings (
+const tsu = new Drivers (
     16,
     "Yuki Tsunoda",
     "JPN",
@@ -188,7 +192,7 @@ const tsu = new DriverStandings (
     "assets/yuktsu01.webp"
 );
 
-const mag = new DriverStandings (
+const mag = new Drivers (
     17,
     "Kevin Magnussen",
     "DEN",
@@ -197,7 +201,7 @@ const mag = new DriverStandings (
     "assets/kevmag01.webp"
 );
 
-const alb = new DriverStandings (
+const alb = new Drivers (
     18,
     "Alex Albon",
     "THA",
@@ -206,7 +210,7 @@ const alb = new DriverStandings (
     "assets/alealb01.webp"
 );
 
-const sar = new DriverStandings (
+const sar = new Drivers (
     19,
     "Logan Sargeant",
     "USA",
@@ -215,7 +219,7 @@ const sar = new DriverStandings (
     "assets/logsar01.webp"
 );
 
-const vri = new DriverStandings (
+const vri = new Drivers (
     20,
     "Nyck De Vries",
     "NED",
@@ -224,7 +228,9 @@ const vri = new DriverStandings (
     "assets/nycdev01.webp"
 );
 
-const rb = new TeamStandings (
+/** Teams **/
+
+const rb = new Teams (
     1,
     "RED BULL RACING HONDA RBPT",
     ver.points + per.points,
@@ -233,10 +239,11 @@ const rb = new TeamStandings (
     "assets/red-bull-racing-logo.webp",
     "Red Bull Logo",
     "assets/red-bull-racing.webp",
-    "Red Bull Car"
+    "Red Bull Car",
+    "#3671C6"
 );
 
-const amr = new TeamStandings (
+const amr = new Teams (
     2,
     "ASTON MARTIN ARAMCO MERCEDES",
     alo.points + str.points,
@@ -245,10 +252,11 @@ const amr = new TeamStandings (
     "assets/aston-martin-logo.webp",
     "Aston Martin Logo",
     "assets/aston-martin.webp",
-    "Aston Martin Car"
+    "Aston Martin Car",
+    "#358C75"
 );
 
-const merc = new TeamStandings (
+const merc = new Teams (
     3,
     "MERCEDES",
     ham.points + rus.points,
@@ -257,10 +265,11 @@ const merc = new TeamStandings (
     "assets/mercedes-logo.webp",
     "Mercedes Logo",
     "assets/mercedes.webp",
-    "Mercedes Car"
+    "Mercedes Car",
+    "#6CD3BF"
 );
 
-const fer = new TeamStandings (
+const fer = new Teams (
     4,
     "FERRARI",
     lec.points + sai.points,
@@ -269,10 +278,11 @@ const fer = new TeamStandings (
     "assets/ferrari-logo.webp",
     "Ferrari Logo",
     "assets/ferrari.webp",
-    "Ferrari Car"
+    "Ferrari Car",
+    "#F91536"
 );
 
-const mcl = new TeamStandings (
+const mcl = new Teams (
     5,
     "MCLAREN MERCEDES",
     nor.points + pia.points,
@@ -281,10 +291,11 @@ const mcl = new TeamStandings (
     "assets/mclaren-logo.webp",
     "Mclaren Logo",
     "assets/mclaren.webp",
-    "Mclaren Car"
+    "Mclaren Car",
+    "#F58020"
 );
 
-const alp = new TeamStandings (
+const alp = new Teams (
     6,
     "ALPINE RENAULT",
     gas.points + oco.points,
@@ -293,10 +304,11 @@ const alp = new TeamStandings (
     "assets/alpine-logo.webp",
     "Alpine Logo",
     "assets/alpine.webp",
-    "Alpine Car"
+    "Alpine Car",
+    "#2293D1"
 );
 
-const haas = new TeamStandings (
+const haas = new Teams (
     7,
     "HAAS FERRARI",
     mag.points + hul.points,
@@ -305,10 +317,11 @@ const haas = new TeamStandings (
     "assets/haas-f1-team-logo.webp",
     "Haas Logo",
     "assets/haas-f1-team.webp",
-    "Haas Car"
+    "Haas Car",
+    "#B6BABD"
 );
 
-const alfa = new TeamStandings (
+const alfa = new Teams (
     8,
     "ALFA ROMEO FERRARI",
     bot.points + gua.points,
@@ -317,10 +330,11 @@ const alfa = new TeamStandings (
     "assets/alfa-romeo-logo.webp",
     "Alfa Romeo Logo",
     "assets/alfa-romeo.webp",
-    "Alfa Romeo Car"
+    "Alfa Romeo Car",
+    "#C92D4B"
 );
 
-const at = new TeamStandings (
+const at = new Teams (
     9,
     "ALPHATAURI HONDA RBPT",
     tsu.points + vri.points,
@@ -329,10 +343,11 @@ const at = new TeamStandings (
     "assets/alphatauri-logo.webp",
     "Alphatauri Logo",
     "assets/alphatauri.webp",
-    "Alfatauri Car"
+    "Alfatauri Car",
+    "#5E8FAA"
 );
 
-const will = new TeamStandings (
+const will = new Teams (
     10,
     "WILLIAMS MERCEDES",
     alb.points + sar.points,
@@ -341,10 +356,11 @@ const will = new TeamStandings (
     "assets/williams-logo.webp",
     "Williams Logo",
     "assets/williams.webp",
-    "Williams Car"
+    "Williams Car",
+    "#37BEDD"
 );
 
-const driverStandingsObjectArray = [ver, per, alo, ham, sai, str, rus, nor, hul, lec, bot, pia, oco, gas, gua, tsu, mag, alb, sar, vri];
-const teamStandingsObjectArray = [rb, amr, merc, fer, mcl, alp, haas, alfa, at, will]
+const driversObjectArray = [ver, per, alo, ham, sai, str, rus, nor, hul, lec, bot, pia, oco, gas, gua, tsu, mag, alb, sar, vri];
+const teamsObjectArray = [rb, amr, merc, fer, mcl, alp, haas, alfa, at, will]
 
-export {driverStandingsObjectArray, teamStandingsObjectArray};
+export {driversObjectArray, teamsObjectArray};

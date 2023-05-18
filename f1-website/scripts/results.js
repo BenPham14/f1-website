@@ -1,4 +1,4 @@
-import {driverStandingsObjectArray, teamStandingsObjectArray} from "./results-data.js";
+import {driversObjectArray, teamsObjectArray} from "./results-data.js";
 
 /** Drivers table **/
 
@@ -20,7 +20,7 @@ driverTable.innerHTML = `
     </table>
 `;
 
-const driverTableData = driverStandingsObjectArray.map((driver) => {
+const driverTableData = driversObjectArray.map((driver) => {
     const content = document.createElement('tr');
     content.innerHTML = `
         <td>${driver.position}</td>
@@ -55,7 +55,7 @@ teamTable.innerHTML = `
     </table>
 `;
 
-const teamTableData = teamStandingsObjectArray.map((team) => {
+const teamTableData = teamsObjectArray.map((team) => {
     const content = document.createElement('tr');
     content.innerHTML = `
         <td>${team.position}</td>

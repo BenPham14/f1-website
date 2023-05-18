@@ -498,6 +498,14 @@ a {
 
 /* --------- Teams --------- */
 
+.teams section > div:nth-child(1) h1 {
+    border-top: 10px solid #15151E;
+    border-right: 10px solid #15151E;
+    border-top-right-radius: 25px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
 .teams .teams-grid {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -508,6 +516,7 @@ a {
     border-right: 2px solid #15151E;
     border-top-right-radius: 10px;
     padding: 10px 10px 0px 0px;
+    cursor: pointer;
 }
 
 .teams .team > div:nth-child(1),
@@ -519,6 +528,7 @@ a {
 
 .teams .team > div:nth-child(1) {
     text-align: right;
+    align-items: center;
 }
 
 .teams .teams-grid .name {

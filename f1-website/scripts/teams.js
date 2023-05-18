@@ -1,6 +1,6 @@
-import {teamStandingsObjectArray} from "./results-data.js";
+import {teamsObjectArray} from "./results-data.js";
 
-const teams = teamStandingsObjectArray.map((team) => {
+const teams = teamsObjectArray.map((team) => {
     const content = document.createElement('div');
     content.classList.add('team');
     content.innerHTML = `
@@ -29,12 +29,18 @@ const teams = teamStandingsObjectArray.map((team) => {
             <img src=${team.carImage.image} alt=${team.carImage.alt} width="500px">
         </div>
     `;
+
+    content.addEventListener('mouseenter', () => {
+        content.style.borderColor = team.color;
+    });
+
+    content.addEventListener('mouseleave', () => {
+        content.style.borderColor = "";
+    });
+
     return content;
 });
 
 teams.forEach((team) => {
     document.querySelector(".teams .teams-grid").append(team);
 });
-
-
-    
