@@ -136,7 +136,7 @@ header {
 .nav-bar .left-links a {
     text-decoration: none;
     color: white;
-    padding: 26px 16px;
+    padding: 25.6px 16px;
 }
 
 .nav-bar .left-links a:hover,
@@ -161,6 +161,23 @@ header {
 
 .left-links a.active {
     text-decoration: underline;
+}
+
+.nav-bar .toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+.nav-bar .toggle-button .bar {
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 /* ---------- Footer ---------- */
@@ -569,6 +586,10 @@ header {
         margin: 0 auto;
     }
 
+    .nav-bar .toggle-button {
+        display: none;
+    }
+
     .news-content,
     .technical-content {
         width: 310px;
@@ -585,6 +606,10 @@ header {
 }
 
 @media only screen and (max-width: 1360px) and (min-width: 1055px) { /** 1055px <= width <= 1360px **/
+    .nav-bar .toggle-button {
+        display: none;
+    }
+    
     .schedule .grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -628,6 +653,44 @@ header {
 
 
 @media only screen and (max-width: 1054px) and (min-width: 711px) { /** width <= 1054px **/
+    /* .left-links {
+        display: none;
+    } */
+
+    .right-links {
+        display: none;
+    }
+
+    .nav-bar .logo img {
+        margin-left: 10px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #a {
+        order: 3;
+    }
+
+    #b {
+        order: 1;
+    }
+
+    #c {
+        order: 2;
+    }
+
+    .nav-bar .left-links a {
+        padding: 0;
+    }
+    
     .teams .teams-grid {
         grid-template-columns: 1fr;
     }
@@ -669,6 +732,44 @@ header {
 }
 
 @media only screen and (max-width: 930px) { /** width <= 930px **/
+    /* .left-links {
+        display: none;
+    } */
+
+    .right-links {
+        display: none;
+    }
+
+    .nav-bar .logo img {
+        margin-left: 10px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #a {
+        order: 3;
+    }
+
+    #b {
+        order: 1;
+    }
+
+    #c {
+        order: 2;
+    }
+
+    .nav-bar .left-links a {
+        padding: 0;
+    }
+
     .past-races > div:nth-child(1) {
         flex-direction: column;
         gap: 20px;
