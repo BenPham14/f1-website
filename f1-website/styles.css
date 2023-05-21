@@ -118,6 +118,7 @@ a {
 header {
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .nav-bar {
@@ -653,9 +654,9 @@ header {
 
 
 @media only screen and (max-width: 1054px) and (min-width: 711px) { /** width <= 1054px **/
-    /* .left-links {
+    .left-links {
         display: none;
-    } */
+    }
 
     .right-links {
         display: none;
@@ -688,7 +689,12 @@ header {
     }
 
     .nav-bar .left-links a {
-        padding: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .left-links.active {
+        display: flex;
     }
     
     .teams .teams-grid {
@@ -732,9 +738,9 @@ header {
 }
 
 @media only screen and (max-width: 930px) { /** width <= 930px **/
-    /* .left-links {
+    .left-links {
         display: none;
-    } */
+    }
 
     .right-links {
         display: none;
@@ -767,7 +773,12 @@ header {
     }
 
     .nav-bar .left-links a {
-        padding: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .left-links.active {
+        display: flex;
     }
 
     .past-races > div:nth-child(1) {
