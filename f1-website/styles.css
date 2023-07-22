@@ -366,7 +366,7 @@ header {
 .schedule .flag {
     border: 1px solid #38383f;
     border-radius: 5px;
-    height: fit-content;
+    align-self: baseline;
 }
 
 .past-races > div:nth-child(1),

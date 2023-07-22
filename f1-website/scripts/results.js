@@ -12,7 +12,7 @@ driverTable.innerHTML = `
                 <th>POS</th>
                 <th>DRIVER</th>
                 <th class="hide-for-mobile">NATIONALITY</th>
-                <th>CAR</th>
+                <th class="hide-for-mobile">CAR</th>
                 <th>PTS</th>
             </tr>
         </thead>
@@ -26,7 +26,7 @@ const driverTableData = driversObjectArray.map((driver) => {
         <td>${driver.position}</td>
         <td>${driver.driver}</td>
         <td class="hide-for-mobile">${driver.nationality}</td>
-        <td>${driver.car}</td>
+        <td class="hide-for-mobile">${driver.car}</td>
         <td>${driver.points}</td>
     `;
     return content;
