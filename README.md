@@ -2,8 +2,6 @@
 
 This is a clone and slight redesign of the official Formula 1 website. The purpose of this project was to practice JavaScript and to create responsive/dynamic websites.
 
-https://f1-clone-by-ben.netlify.app/
-
 ## Screenshots
 ### Home Page:
 ![image](https://github.com/BenPham14/f1-website/assets/97713069/92d8135c-7b8e-465c-a992-f30bd3fe2fb1)
