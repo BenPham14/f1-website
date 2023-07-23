@@ -1,6 +1,8 @@
 # Formula 1 Website
 
-This is a clone and slight redesign of the official Formula 1 website. The purpose of this project was to practice JavaScript and to create responsive/dynamic websites.
+This is a clone and slight redesign of the official Formula 1 website. The purpose of this project was to practice JavaScript and to create responsive/dynamic websites. 
+
+https://f1-clone-by-ben.netlify.app/
 
 ## Screenshots
 ### Home Page:
